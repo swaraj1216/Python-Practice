@@ -1,0 +1,54 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMpZbhzMSlPadKxdQ4B/4HN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LIXUN22/Bubble-sort-technique/blob/main/BUBBLE_SORT.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "9BQxy1qQEXah"
+      },
+      "outputs": [],
+      "source": [
+        "#bubble sort technique\n",
+        "\n",
+        "def bubble_sort(a):\n",
+        "  for i in range(len(a)):\n",
+        "    for j in range(len(a)-i-1):\n",
+        "      if a[j]>a[j+1]:\n",
+        "        a[j],a[j+1]=a[j+1],a[j]\n",
+        "  return a\n",
+        "a=[]\n",
+        "n=int(input(\"enter the number of elements\"))\n",
+        "for i in range(n):\n",
+        "  b=int(input(f\"enter element {i+1} : \"))\n",
+        "  a.append(b)\n",
+        "print(\"sorted list\",bubble_sort(a))"
+      ]
+    }
+  ]
+}
